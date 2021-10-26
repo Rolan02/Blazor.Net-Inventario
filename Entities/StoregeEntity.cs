@@ -14,8 +14,15 @@ namespace Entities
         public DateTime LastUpdate { get; set; }
         [Required]
         public int PartialQuantity { get; set; }
+        //relacion con productos(ProductEntity)
         public string ProductId { get; set; }
         public ProductEntity Product { get; set; }
+        //relacion con Bodegas(WhereHouseEntity)
+        public string WhereHouseId { get; set; }
+        public WherehouseEntity WhereHouse { get; set; }
+        //relacion con movimientos(InputOutputEntity)
+        public ICollection<InputOuputEntity> InputOuputs { get; set; }
+
 
     }
 }

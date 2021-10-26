@@ -15,5 +15,8 @@ namespace Entities
         [Required]
         [StringLength(200)]
         public string WherehouseAddres { get; set; }
+        //relacion con almacenamiento (StoregeEntity)
+        public ICollection<StoregeEntity> Storages { get; set; }
+
     }
 }

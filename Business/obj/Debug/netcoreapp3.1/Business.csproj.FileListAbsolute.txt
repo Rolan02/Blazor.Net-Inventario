@@ -1,0 +1,14 @@
+C:\Users\Rolando\source\repos\Inventory\Business\bin\Debug\netcoreapp3.1\Business.deps.json
+C:\Users\Rolando\source\repos\Inventory\Business\bin\Debug\netcoreapp3.1\Business.dll
+C:\Users\Rolando\source\repos\Inventory\Business\bin\Debug\netcoreapp3.1\Business.pdb
+C:\Users\Rolando\source\repos\Inventory\Business\bin\Debug\netcoreapp3.1\DataAccess.dll
+C:\Users\Rolando\source\repos\Inventory\Business\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\Rolando\source\repos\Inventory\Business\bin\Debug\netcoreapp3.1\DataAccess.pdb
+C:\Users\Rolando\source\repos\Inventory\Business\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\Rolando\source\repos\Inventory\Business\obj\Debug\netcoreapp3.1\Business.csproj.AssemblyReference.cache
+C:\Users\Rolando\source\repos\Inventory\Business\obj\Debug\netcoreapp3.1\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rolando\source\repos\Inventory\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfoInputs.cache
+C:\Users\Rolando\source\repos\Inventory\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfo.cs
+C:\Users\Rolando\source\repos\Inventory\Business\obj\Debug\netcoreapp3.1\Business.csproj.CoreCompileInputs.cache
+C:\Users\Rolando\source\repos\Inventory\Business\obj\Debug\netcoreapp3.1\Business.dll
+C:\Users\Rolando\source\repos\Inventory\Business\obj\Debug\netcoreapp3.1\Business.pdb

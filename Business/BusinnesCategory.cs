@@ -9,7 +9,7 @@ namespace Business
 {
     public class BusinnesCategory
     {
-        public List<CategoryEntity> CategoryList()
+        public static List<CategoryEntity> CategoryList()
         {
             using (var db = new InventaryContext())
             {

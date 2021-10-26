@@ -9,14 +9,14 @@ namespace Business
 {
     public class BusinnesProduct
     {
-        public List<ProductEntity> ProductList()
+        public static List<ProductEntity> ProductList()
         {
             using (var db = new InventaryContext())
             {
                 return db.Products.ToList();
             }
         }
-        public void CreateProduct (ProductEntity oProduct)
+        public static void CreateProduct (ProductEntity oProduct)
         {
             using (var db = new InventaryContext())
             {

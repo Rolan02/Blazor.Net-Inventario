@@ -1253,20 +1253,6 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Business/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "DataAccess": "1.0.0",
-          "Entities": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Business.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Business.dll": {}
-        }
-      },
       "DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -4957,11 +4943,6 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "Business/1.0.0": {
-      "type": "project",
-      "path": "../Business/Business.csproj",
-      "msbuildProject": "../Business/Business.csproj"
-    },
     "DataAccess/1.0.0": {
       "type": "project",
       "path": "../DataAccess/DataAccess.csproj",
@@ -4975,7 +4956,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Business >= 1.0.0",
+      "DataAccess >= 1.0.0",
       "Entities >= 1.0.0"
     ]
   },
@@ -4985,11 +4966,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rolando\\source\\repos\\Inventory\\Inventory\\Inventory.csproj",
-      "projectName": "Inventory",
-      "projectPath": "C:\\Users\\Rolando\\source\\repos\\Inventory\\Inventory\\Inventory.csproj",
+      "projectUniqueName": "C:\\Users\\Rolando\\source\\repos\\Inventory\\Business\\Business.csproj",
+      "projectName": "Business",
+      "projectPath": "C:\\Users\\Rolando\\source\\repos\\Inventory\\Business\\Business.csproj",
       "packagesPath": "C:\\Users\\Rolando\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rolando\\source\\repos\\Inventory\\Inventory\\obj\\",
+      "outputPath": "C:\\Users\\Rolando\\source\\repos\\Inventory\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rolando\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5006,8 +4987,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Rolando\\source\\repos\\Inventory\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\Rolando\\source\\repos\\Inventory\\Business\\Business.csproj"
+            "C:\\Users\\Rolando\\source\\repos\\Inventory\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Rolando\\source\\repos\\Inventory\\DataAccess\\DataAccess.csproj"
             },
             "C:\\Users\\Rolando\\source\\repos\\Inventory\\Entities\\Entities.csproj": {
               "projectPath": "C:\\Users\\Rolando\\source\\repos\\Inventory\\Entities\\Entities.csproj"
@@ -5035,9 +5016,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

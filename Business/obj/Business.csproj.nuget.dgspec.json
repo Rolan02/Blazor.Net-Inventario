@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rolando\\source\\repos\\Inventory\\Inventory\\Inventory.csproj": {}
+    "C:\\Users\\Rolando\\source\\repos\\Inventory\\Business\\Business.csproj": {}
   },
   "projects": {
     "C:\\Users\\Rolando\\source\\repos\\Inventory\\Business\\Business.csproj": {
@@ -185,70 +185,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Rolando\\source\\repos\\Inventory\\Inventory\\Inventory.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Rolando\\source\\repos\\Inventory\\Inventory\\Inventory.csproj",
-        "projectName": "Inventory",
-        "projectPath": "C:\\Users\\Rolando\\source\\repos\\Inventory\\Inventory\\Inventory.csproj",
-        "packagesPath": "C:\\Users\\Rolando\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rolando\\source\\repos\\Inventory\\Inventory\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Rolando\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
-            "projectReferences": {
-              "C:\\Users\\Rolando\\source\\repos\\Inventory\\Business\\Business.csproj": {
-                "projectPath": "C:\\Users\\Rolando\\source\\repos\\Inventory\\Business\\Business.csproj"
-              },
-              "C:\\Users\\Rolando\\source\\repos\\Inventory\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Rolando\\source\\repos\\Inventory\\Entities\\Entities.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

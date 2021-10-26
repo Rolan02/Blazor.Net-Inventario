@@ -41,7 +41,7 @@ namespace DataAccess
                 new WarehouseEntity { WarehouseId = Guid.NewGuid().ToString(), WarehouseName = "Bodega Central",WarehouseAddres = "Calle Antezana" },
                 new WarehouseEntity { WarehouseId = Guid.NewGuid().ToString(), WarehouseName = "Bodega Norte",WarehouseAddres = "Calle Atahuallapa" },
                 new WarehouseEntity { WarehouseId = Guid.NewGuid().ToString(), WarehouseName = "Bodega Sud",WarehouseAddres = "Calle Villa Pagador" }
-    );
+                );
         }
       
     }

@@ -19,7 +19,7 @@ namespace Entities
         public ProductEntity Product { get; set; }
         //relacion con Bodegas(WhereHouseEntity)
         public string WhereHouseId { get; set; }
-        public WherehouseEntity WhereHouse { get; set; }
+        public WarehouseEntity WareHouse { get; set; }
         //relacion con movimientos(InputOutputEntity)
         public ICollection<InputOuputEntity> InputOuputs { get; set; }
 

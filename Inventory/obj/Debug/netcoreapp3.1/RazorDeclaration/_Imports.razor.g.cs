@@ -75,20 +75,6 @@ using Inventory.Shared;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 10 "C:\Users\Rolando\source\repos\Inventory\Inventory\_Imports.razor"
-using Inventory.Components.Ejercicios.RazorPages;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 11 "C:\Users\Rolando\source\repos\Inventory\Inventory\_Imports.razor"
-using Inventory.Components.Ejercicios.Forms;
-
-#line default
-#line hidden
-#nullable disable
     public partial class _Imports : System.Object
     {
         #pragma warning disable 1998

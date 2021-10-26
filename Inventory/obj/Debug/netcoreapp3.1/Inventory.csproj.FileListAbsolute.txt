@@ -50,7 +50,3 @@ C:\Users\Rolando\source\repos\Inventory\Inventory\obj\Debug\netcoreapp3.1\Invent
 C:\Users\Rolando\source\repos\Inventory\Inventory\obj\Debug\netcoreapp3.1\Inventory.pdb
 C:\Users\Rolando\source\repos\Inventory\Inventory\obj\Debug\netcoreapp3.1\Inventory.genruntimeconfig.cache
 C:\Users\Rolando\source\repos\Inventory\Inventory\obj\Debug\netcoreapp3.1\Inventory.csproj.CopyComplete
-C:\Users\Rolando\source\repos\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Ejercicios\RazorPages\Form001.razor.g.cs
-C:\Users\Rolando\source\repos\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Ejercicios\RazorPages\Form001.razor.g.cs
-C:\Users\Rolando\source\repos\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Ejercicios\Forms\Form002.razor.g.cs
-C:\Users\Rolando\source\repos\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Ejercicios\Forms\Form002.razor.g.cs

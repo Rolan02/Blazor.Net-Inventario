@@ -104,13 +104,16 @@ using Business;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 24 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Products\ListProductsComponent.razor"
+#line 34 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Products\ListProductsComponent.razor"
        
     List<ProductEntity> products = new List<ProductEntity>();
+    List<CategoryEntity> categories = new List<CategoryEntity>();
+        
 
     protected override async Task OnInitializedAsync()
     {
         products = BusinnesProduct.ProductList();
+        categories = BusinnesCategory.CategoryList();
     }
 
 #line default

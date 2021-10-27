@@ -104,7 +104,7 @@ using Business;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 32 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Products\CreateProductCompoment.razor"
+#line 34 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Products\CreateProductCompoment.razor"
        
     ProductEntity oProduct = new ProductEntity();
     List<CategoryEntity> categories = new List<CategoryEntity>();
@@ -117,11 +117,13 @@ using Business;
     private void SaveProduct()
     {
         BusinnesProduct.CreateProduct(oProduct);
+        NavManager.NavigateTo("product/list");
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavManager { get; set; }
     }
 }
 #pragma warning restore 1591

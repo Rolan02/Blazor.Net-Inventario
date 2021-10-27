@@ -16,6 +16,13 @@ namespace Business
                 return db.Products.ToList();
             }
         }
+        public static ProductEntity ProductById(string id )
+        {
+            using (var db = new InventaryContext())
+            {
+                return db.Products.ToList().LastOrDefault(p => p.ProductId == id);
+            }
+        }
         public static void CreateProduct (ProductEntity oProduct)
         {
             using (var db = new InventaryContext())
@@ -24,11 +31,12 @@ namespace Business
                 db.SaveChanges();
             }
         }
-        public void UpdateProduct(ProductEntity oProduct)
+        public static void  UpdateProduct(ProductEntity oProduct)
         {
             using (var db = new InventaryContext())
             {
                 db.Products.Update(oProduct);
+                db.SaveChanges();
             }
         }
     }

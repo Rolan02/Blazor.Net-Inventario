@@ -83,20 +83,20 @@ using Inventory.Components.Products;
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Products\ListProductsComponent.razor"
+#line 1 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Products\UpdateProductComponent.razor"
 using Entities;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Products\ListProductsComponent.razor"
+#line 2 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Products\UpdateProductComponent.razor"
 using Business;
 
 #line default
 #line hidden
 #nullable disable
-    public partial class ListProductsComponent : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class UpdateProductComponent : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -104,30 +104,28 @@ using Business;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 38 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Products\ListProductsComponent.razor"
+#line 29 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Products\UpdateProductComponent.razor"
        
-    List<ProductEntity> products = new List<ProductEntity>();
-    List<ProductEntity> temproducts = new List<ProductEntity>();
+    [Parameter]
+    public string IdProduct { get; set; }
+    ProductEntity oProduct = new ProductEntity();
     List<CategoryEntity> categories = new List<CategoryEntity>();
-
-    string mesage;
 
     protected override async Task OnInitializedAsync()
     {
-        products = BusinnesProduct.ProductList();
-        temproducts = products;
         categories = BusinnesCategory.CategoryList();
+        oProduct = BusinnesProduct.ProductById(IdProduct);
     }
-    //@onChange --> Evento de cambio
-    private void CategoryChanged(ChangeEventArgs e)
+    private void UpdateProduct() 
     {
-
-        temproducts = products.Where(c => c.CategotyId == e.Value.ToString()).ToList();
+        BusinnesProduct.UpdateProduct(oProduct);
+        NavManage.NavigateTo("product/list");
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavManage { get; set; }
     }
 }
 #pragma warning restore 1591

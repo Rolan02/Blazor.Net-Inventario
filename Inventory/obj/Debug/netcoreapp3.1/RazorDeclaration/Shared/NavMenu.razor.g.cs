@@ -90,7 +90,7 @@ using Inventory.Components.Products;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "C:\Users\Rolando\source\repos\Inventory\Inventory\Shared\NavMenu.razor"
+#line 33 "C:\Users\Rolando\source\repos\Inventory\Inventory\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

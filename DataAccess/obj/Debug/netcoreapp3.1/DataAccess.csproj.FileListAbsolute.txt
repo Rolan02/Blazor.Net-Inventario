@@ -10,6 +10,7 @@ C:\Users\Rolando\source\repos\Inventory\DataAccess\obj\Debug\netcoreapp3.1\DataA
 C:\Users\Rolando\source\repos\Inventory\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfoInputs.cache
 C:\Users\Rolando\source\repos\Inventory\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfo.cs
 C:\Users\Rolando\source\repos\Inventory\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Rolando\source\repos\Inventory\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CopyComplete
 C:\Users\Rolando\source\repos\Inventory\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.dll
 C:\Users\Rolando\source\repos\Inventory\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.pdb
 C:\Users\Rolando\source\repos\Inventory\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.genruntimeconfig.cache

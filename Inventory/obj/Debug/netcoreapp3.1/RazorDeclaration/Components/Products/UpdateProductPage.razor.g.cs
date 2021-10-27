@@ -82,21 +82,8 @@ using Inventory.Components.Products;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 1 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Products\ListProductsComponent.razor"
-using Entities;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 2 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Products\ListProductsComponent.razor"
-using Business;
-
-#line default
-#line hidden
-#nullable disable
-    public partial class ListProductsComponent : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/product/update/{IdProduct}")]
+    public partial class UpdateProductPage : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -104,25 +91,14 @@ using Business;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 38 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Products\ListProductsComponent.razor"
+#line 5 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Products\UpdateProductPage.razor"
        
-    List<ProductEntity> products = new List<ProductEntity>();
-    List<ProductEntity> temproducts = new List<ProductEntity>();
-    List<CategoryEntity> categories = new List<CategoryEntity>();
-
-    string mesage;
+    [Parameter]
+    public string IdProduct { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
-        products = BusinnesProduct.ProductList();
-        temproducts = products;
-        categories = BusinnesCategory.CategoryList();
-    }
-    //@onChange --> Evento de cambio
-    private void CategoryChanged(ChangeEventArgs e)
-    {
-
-        temproducts = products.Where(c => c.CategotyId == e.Value.ToString()).ToList();
+        IdProduct = IdProduct;
     }
 
 #line default

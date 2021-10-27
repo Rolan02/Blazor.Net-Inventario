@@ -1,7 +1,6 @@
 C:\Users\Rolando\source\repos\Inventory\Entities\bin\Debug\netcoreapp3.1\Entities.deps.json
 C:\Users\Rolando\source\repos\Inventory\Entities\bin\Debug\netcoreapp3.1\Entities.dll
 C:\Users\Rolando\source\repos\Inventory\Entities\bin\Debug\netcoreapp3.1\Entities.pdb
-C:\Users\Rolando\source\repos\Inventory\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.AssemblyReference.cache
 C:\Users\Rolando\source\repos\Inventory\Entities\obj\Debug\netcoreapp3.1\Entities.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Rolando\source\repos\Inventory\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
 C:\Users\Rolando\source\repos\Inventory\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs

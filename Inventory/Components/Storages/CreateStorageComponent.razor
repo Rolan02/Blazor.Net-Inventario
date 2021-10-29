@@ -1,0 +1,45 @@
+﻿@using Business
+@using Entities
+
+<EditForm Model="oStorage ">
+    <div class="form-group">
+        <label>Bodega:</label>
+        <InputSelect @bind-Value="oStorage.WareHouseId" class="form-control">
+            <option>Seleccione una Bodega....</option>
+            @foreach (var warehouse in warehouses)
+            {
+                <option value=" @warehouse.WarehouseId">@warehouse.WarehouseName</option>
+            }
+        </InputSelect>
+    </div>
+    <div class="form-group">
+        <label>Bodega:</label>
+        <InputSelect @bind-Value="oStorage.ProductId" class="form-control">
+            <option>Seleccione una Producto....</option>
+            @foreach (var product in products)
+            {
+                <option value=" @product.ProductId">@product.ProductName</option>
+            }
+        </InputSelect>
+    </div>
+    <input type="button" value="Almacenar producto" onclick="SaveStorage" />
+
+</EditForm>
+          
+
+@code {
+    StoregeEntity oStorage = new StoregeEntity();
+    List<WarehouseEntity> warehouses = new List<WarehouseEntity>();
+    List<ProductEntity> products = new List<ProductEntity>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        warehouses = BusinnesWarehouse.WarehouseList();
+        products = BusinnesProduct.ProductList();
+    }
+    private void SaveStorage() {
+        oStorage.LastUpdate = DateTime.Now;
+        oStorage.StorageId = Guid.NewGuid().ToString();
+        BusinnesStorage.CreateStorage(oStorage);
+    }
+}

@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace Inventory.Components.Products
+namespace Inventory.Components.Warehouse
 {
     #line hidden
     using System;
@@ -83,20 +83,20 @@ using Inventory.Components.Products;
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Products\ListProductsComponent.razor"
-using Entities;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 2 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Products\ListProductsComponent.razor"
+#line 1 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Warehouse\ListWarehousesComponents.razor"
 using Business;
 
 #line default
 #line hidden
 #nullable disable
-    public partial class ListProductsComponent : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 2 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Warehouse\ListWarehousesComponents.razor"
+using Entities;
+
+#line default
+#line hidden
+#nullable disable
+    public partial class ListWarehousesComponents : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -104,23 +104,15 @@ using Business;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 38 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Products\ListProductsComponent.razor"
+#line 36 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Warehouse\ListWarehousesComponents.razor"
        
-    List<ProductEntity> products = new List<ProductEntity>();
-    List<ProductEntity> temproducts = new List<ProductEntity>();
-    List<CategoryEntity> categories = new List<CategoryEntity>();
+    [Parameter]
+    public string ToPage { get; set; }
+    private List<WarehouseEntity> warehouses = new List<WarehouseEntity>();
 
     protected override async Task OnInitializedAsync()
     {
-        products = BusinnesProduct.ProductList();
-        temproducts = products;
-        categories = BusinnesCategory.CategoryList();
-    }
-    //@onChange --> Evento de cambio
-    private void CategoryChanged(ChangeEventArgs e)
-    {
-
-        temproducts = products.Where(c => c.CategotyId == e.Value.ToString()).ToList();
+        warehouses = BusinnesWarehouse.WarehouseList();
     }
 
 #line default

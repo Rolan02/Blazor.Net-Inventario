@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace Inventory.Components.Products
+namespace Inventory.Components.Categories
 {
     #line hidden
     using System;
@@ -83,20 +83,20 @@ using Inventory.Components.Products;
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Products\ListProductsComponent.razor"
+#line 1 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Categories\CreateCategoryComponent.razor"
 using Entities;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Products\ListProductsComponent.razor"
+#line 2 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Categories\CreateCategoryComponent.razor"
 using Business;
 
 #line default
 #line hidden
 #nullable disable
-    public partial class ListProductsComponent : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class CreateCategoryComponent : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -104,28 +104,25 @@ using Business;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 38 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Products\ListProductsComponent.razor"
+#line 24 "C:\Users\Rolando\source\repos\Inventory\Inventory\Components\Categories\CreateCategoryComponent.razor"
        
-    List<ProductEntity> products = new List<ProductEntity>();
-    List<ProductEntity> temproducts = new List<ProductEntity>();
-    List<CategoryEntity> categories = new List<CategoryEntity>();
+    CategoryEntity oCategory = new CategoryEntity();
 
-    protected override async Task OnInitializedAsync()
+    private void Save()
     {
-        products = BusinnesProduct.ProductList();
-        temproducts = products;
-        categories = BusinnesCategory.CategoryList();
+        BusinnesCategory.CreateCategory(oCategory);
+        NavManager.NavigateTo("category/list");
     }
-    //@onChange --> Evento de cambio
-    private void CategoryChanged(ChangeEventArgs e)
-    {
 
-        temproducts = products.Where(c => c.CategotyId == e.Value.ToString()).ToList();
+    private void HandleValidSubmit()
+    {
+        Console.WriteLine("On Valid Submit");
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavManager { get; set; }
     }
 }
 #pragma warning restore 1591

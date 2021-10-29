@@ -16,7 +16,7 @@ namespace Business
                 return db.Categories.ToList();
             }
         }
-        public void CreateCategory(CategoryEntity oCategory)
+        public static void CreateCategory(CategoryEntity oCategory)
         {
             using (var db = new InventaryContext())
             {
@@ -24,7 +24,7 @@ namespace Business
                 db.SaveChanges();
             }
         }
-        public void UpdateCategory(CategoryEntity oCategory)
+        public static void UpdateCategory(CategoryEntity oCategory)
         {
             using (var db = new InventaryContext()) 
             {

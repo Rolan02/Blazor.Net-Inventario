@@ -16,7 +16,7 @@ namespace Business
                 return db.Storages.ToList();
             }
         }
-        public void CreateStorage(StoregeEntity oStorage)
+        public static void CreateStorage(StoregeEntity oStorage)
         {
             using (var db = new InventaryContext())
             {

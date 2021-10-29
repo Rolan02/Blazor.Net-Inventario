@@ -1,0 +1,45 @@
+﻿@using Entities
+@using Business
+
+
+<hr>
+<a href="category/create">Agregando Nueva Categoria</a>
+<hr/>
+@if (categories == null)
+{
+    <p><em>Cargando...</em></p>   
+}
+else
+{
+    <table id="categoriesTable" class="display-1 table-bordered table-hover">
+        <thhead>
+            <tr>
+                <th>Referencia</th>
+                <th>Categoria</th>
+                <th></th>
+            </tr>
+        </thhead>  
+        <tbody>
+            @foreach (var category in categories)
+            { 
+            <tr>
+                <td>@category.CategotyId </td>
+                <td>@category.CategoryName </td>
+                <td>
+                    <a href="category/update/@category.CategotyId">Editar</a>
+                </td>
+            </tr>
+            }
+        </tbody>   
+    </table>
+}
+
+@code {
+    private List<CategoryEntity> categories = new List<CategoryEntity>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        categories = BusinnesCategory.CategoryList();
+    }
+
+}

@@ -98,3 +98,9 @@ C:\Users\Rolando\source\repos\Inventory\Inventory\obj\Debug\netcoreapp3.1\Invent
 C:\Users\Rolando\source\repos\Inventory\Inventory\obj\Debug\netcoreapp3.1\Inventory.dll
 C:\Users\Rolando\source\repos\Inventory\Inventory\obj\Debug\netcoreapp3.1\Inventory.pdb
 C:\Users\Rolando\source\repos\Inventory\Inventory\obj\Debug\netcoreapp3.1\Inventory.genruntimeconfig.cache
+C:\Users\Rolando\source\repos\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Categories\CreateCategoryComponent.razor.g.cs
+C:\Users\Rolando\source\repos\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Categories\CreateCategoryComponent.razor.g.cs
+C:\Users\Rolando\source\repos\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Categories\CategoriesListComponent.razor.g.cs
+C:\Users\Rolando\source\repos\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Categories\CategoriesListComponent.razor.g.cs
+C:\Users\Rolando\source\repos\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Warehouse\ListWarehousesComponents.razor.g.cs
+C:\Users\Rolando\source\repos\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Warehouse\ListWarehousesComponents.razor.g.cs
